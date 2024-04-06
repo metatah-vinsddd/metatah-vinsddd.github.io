@@ -71,6 +71,9 @@
                 animation: pulse 1.5s infinite;
                 background-color: black;
             }
+            .transition {
+                transition: 0.3s;
+            }
             /* width */
             ::-webkit-scrollbar {
                 width: 3px;
@@ -105,15 +108,6 @@
             <div
                 class="z-1 position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-50"
             ></div>
-
-            <!-- <img
-                src="img/0B7A0165.jpg"
-                class="h-100 w-100 object-fit-cover d-none d-md-block"
-            />
-            <img
-                src="img/0B7A0165.jpg"
-                class="h-100 w-100 object-fit-cover d-block d-md-none"
-            /> -->
             <div
                 class="z-2 d-flex flex-column position-fixed h-100 w-100 top-0 justify-content-between"
             >
@@ -150,12 +144,21 @@
                 </div>
             </div>
             <div
-                class="position-absolute blur-load"
+                class="d-block d-md-none position-absolute blur-load"
                 style="background-image: url(img/thumbnail/0B7A0165.jpg)"
             ></div>
             <img
                 data-src="img/0B7A0165.jpg"
-                class="h-100 w-100 object-fit-cover transition img-thumb position-relative z-0"
+                class="d-block d-md-none h-100 w-100 object-fit-cover transition img-thumb position-relative z-0"
+                style="opacity: 0"
+            />
+            <div
+                class="d-none d-md-block position-absolute blur-load"
+                style="background-image: url(img/thumbnail/l-1.jpg)"
+            ></div>
+            <img
+                data-src="img/l-1.jpg"
+                class="d-none d-md-block h-100 w-100 object-fit-cover transition img-thumb position-relative z-0"
                 style="opacity: 0"
             />
         </div>
@@ -273,14 +276,23 @@
                             </a>
                         </div>
                         <div
-                            class="position-absolute blur-load"
+                            class="d-block d-md-none position-absolute blur-load"
                             style="
                                 background-image: url(img/thumbnail/0B7A0165.jpg);
                             "
                         ></div>
                         <img
                             data-src="img/0B7A0165.jpg"
-                            class="h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
+                            class="d-block d-md-none h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
+                            style="opacity: 0"
+                        />
+                        <div
+                            class="d-none d-md-block position-absolute blur-load"
+                            style="background-image: url(img/thumbnail/l-1.jpg)"
+                        ></div>
+                        <img
+                            data-src="img/l-1.jpg"
+                            class="d-none d-md-block h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
                             style="opacity: 0"
                         />
                     </div>
@@ -328,14 +340,23 @@
                             </a>
                         </div>
                         <div
-                            class="position-absolute blur-load"
+                            class="d-block d-md-none position-absolute blur-load"
                             style="
                                 background-image: url(img/thumbnail/0B7A0253.jpg);
                             "
                         ></div>
                         <img
                             data-src="img/0B7A0253.jpg"
-                            class="h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
+                            class="d-block d-md-none h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
+                            style="opacity: 0"
+                        />
+                        <div
+                            class="d-none d-md-block position-absolute blur-load"
+                            style="background-image: url(img/thumbnail/l-2.jpg)"
+                        ></div>
+                        <img
+                            data-src="img/l-2.jpg"
+                            class="d-none d-md-block h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
                             style="opacity: 0"
                         />
                     </div>
@@ -383,14 +404,23 @@
                             </a>
                         </div>
                         <div
-                            class="position-absolute blur-load"
+                            class="d-block d-md-none position-absolute blur-load"
                             style="
                                 background-image: url(img/thumbnail/0B7A0388.jpg);
                             "
                         ></div>
                         <img
                             data-src="img/0B7A0388.jpg"
-                            class="h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
+                            class="d-block d-md-none h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
+                            style="opacity: 0"
+                        />
+                        <div
+                            class="d-none d-md-block position-absolute blur-load"
+                            style="background-image: url(img/thumbnail/l-3.jpg)"
+                        ></div>
+                        <img
+                            data-src="img/l-3.jpg"
+                            class="d-none d-md-block h-100 w-100 object-fit-cover transition img-thumb position-relative z-1"
                             style="opacity: 0"
                         />
                     </div>
@@ -414,69 +444,242 @@
                                 Acara Manusa Yadnya Metatah (Potong Gigi) Kami.
                             </p>
                         </div>
-                        <div
-                            class="row justify-content-center py-5 overflow-x-hidden"
-                        >
-                            <div class="col-lg-4 p-0 p-lg-4">
-                                <div
-                                    class="position-relative shadow"
-                                    data-aos="slide-right"
-                                >
-                                    <img
-                                        src="img/man.jpg"
-                                        class="w-100"
-                                        alt=""
-                                    />
-                                    <div
-                                        class="position-absolute bottom-0 bg-black bg-opacity-50 text-white px-3 py-5 w-100"
-                                    >
-                                        <div class="vstack">
+                        <div class="container-fluid">
+                            <div
+                                class="row g-5 justify-content-center py-5 overflow-hidden"
+                            >
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
                                             <div
-                                                class="handwritting fs-3 fw-bold"
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
                                             >
-                                                Putu Yoga Sumartama
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/vianca.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/vianca.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
                                             </div>
-                                            <!-- <div>
-                                                Anak pertama dari pasangan
-                                            </div>
-                                            <div>John Doe</div>
-                                            <div>&</div>
-                                            <div>Jane Doe</div> -->
                                         </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        ⁠Putu Vianca Kirana Wirasthithi
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        Wayan Wirnatha & ⁠Kadek Sri Asthithi
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 p-0 p-lg-4">
-                                <div
-                                    class="position-relative shadow"
-                                    data-aos="slide-left"
-                                >
-                                    <img
-                                        src="img/woman.jpg"
-                                        class="w-100"
-                                        alt=""
-                                    />
-                                    <div
-                                        class="position-absolute bottom-0 bg-black bg-opacity-50 text-white px-3 py-5 w-100"
-                                    >
-                                        <div class="vstack">
+                            <div
+                                class="row g-5 justify-content-center py-5 overflow-hidden"
+                            >
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
                                             <div
-                                                class="handwritting fs-3 fw-bold"
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
                                             >
-                                                Ni Nyoman Koming Adiyuni
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/selina.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/selina.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
                                             </div>
-                                            <!-- <div>
-                                                Anak pertama dari pasangan
-                                            </div>
-                                            <div>John Doe</div>
-                                            <div>&</div>
-                                            <div>Jane Doe</div> -->
                                         </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        Ni Putu Selina Audynna Asta
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        I Nyoman Asta & Ni Ketut Suparniti, S.E.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
+                                            <div
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
+                                            >
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/nadin.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/nadin.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        Ni Made Nadin Arviana Sari Devi Asta
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        I Nyoman Asta & Ni Ketut Suparniti, S.E.
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="row g-5 justify-content-center py-5 overflow-hidden"
+                            >
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
+                                            <div
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
+                                            >
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/intan.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/intan.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        Ni Made Intan Mahariadnyani, S.Kom.
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        Nengah Kendra & Dewa Ayu Putu Wiratni
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="row g-5 justify-content-center py-5 overflow-hidden"
+                            >
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
+                                            <div
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
+                                            >
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/diyah.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/diyah.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        Ni Putu Diyah Cahyaningrum, S.Kom.
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        I Wayan Mendi, S.E. (alm) & I Gusti Ayu
+                                        Tri Wahyuni
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
+                                            <div
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
+                                            >
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/dwi.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/dwi.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        Ni Made Dwilestari, S.M.
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        I Wayan Mendi, S.E. (alm) & I Gusti Ayu
+                                        Tri Wahyuni
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="row g-5 justify-content-center py-5 overflow-hidden"
+                            >
+                                <div class="col-md-6 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-8">
+                                            <div
+                                                class="mb-2 ratio ratio-1x1 overflow-hidden rounded-circle"
+                                                data-aos="fade-up"
+                                            >
+                                                <div
+                                                    class="position-absolute blur-load"
+                                                    style="
+                                                        background-image: url('img/person/thumbnail/desy.jpg');
+                                                    "
+                                                ></div>
+                                                <img
+                                                    data-src="img/person/desy.jpg"
+                                                    class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                    style="opacity: 0"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handwritting fs-1">
+                                        Ni Made Desy Komala Sari, S.Par.
+                                    </div>
+                                    <div class="small text-secondary">
+                                        Putri dari pasangan <br />
+                                        I Nengah Dendi & ⁠Ni Luh Putu Yuli
+                                        Astini
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="fs-4 mb-4">Resepsi Pawiwahan</div>
+                        <div class="fs-4 mb-4">Resepsi</div>
                         <div class="container-fluid overflow-hidden">
                             <div
                                 class="row justify-content-center g-5 g-lg-3 mb-5"
@@ -512,35 +715,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fs-4 mb-4">Mepandes</div>
-                        <div class="vstack gap-3 mb-5">
-                            <div data-aos="slide-up" data-aos-delay="0">
-                                Putu Rivan Anggana Dharmawangsa
-                            </div>
-                            <div data-aos="slide-up" data-aos-delay="100">
-                                Kadek Rexi Khrisna Yudha
-                            </div>
-                            <div data-aos="slide-up" data-aos-delay="200">
-                                Komang Alvira Sutera Anantha
-                            </div>
-                            <div data-aos="slide-up" data-aos-delay="300">
-                                I Putu Pande Angga Darma Putra
-                            </div>
-                            <div data-aos="slide-up" data-aos-delay="400">
-                                I Kadek Pande Dwi Darma Putra
-                            </div>
-                        </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-8 text-center">
                                 <a
-                                    href="https://maps.app.goo.gl/GsVEnVRArgRyXpNe8"
+                                    href="https://maps.app.goo.gl/hDoMbtRGRjUoBzGp6"
                                     target="_blank"
                                     class="btn btn-dark mb-4"
                                     ><i class="fa fa-map"></i> Maps</a
                                 >
                                 <div class="ratio ratio-21x9 img-thumbnail">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3946.0562841291057!2d115.21909764540445!3d-8.493908769657937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjknMzcuOCJTIDExNcKwMTMnMDcuOCJF!5e0!3m2!1sen!2sid!4v1702897743083!5m2!1sen!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.6975765423454!2d115.16847227589848!3d-8.720240588914761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2477abc0124c5%3A0x665741c44418718c!2sCafe%20Tree%20House!5e0!3m2!1sen!2sid!4v1712366343801!5m2!1sen!2sid"
                                         style="border: 0"
                                         allowfullscreen=""
                                         loading="lazy"
@@ -571,153 +756,675 @@
                             <div class="row g-3">
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery1.jpg"
+                                        href="img/0B7A0165.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0165.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery1.jpg"
+                                                data-src="img/0B7A0165.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="0"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery1.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery2.jpg"
+                                        href="img/0B7A0176.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0176.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery2.jpg"
+                                                data-src="img/0B7A0176.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="100"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery2.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery3.jpg"
+                                        href="img/0B7A0253.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0253.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery3.jpg"
+                                                data-src="img/0B7A0253.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="200"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery3.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery4.jpg"
+                                        href="img/0B7A0278.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0278.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery4.jpg"
+                                                data-src="img/0B7A0278.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="200"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery4.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery5.jpg"
+                                        href="img/0B7A0388.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0388.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery5.jpg"
+                                                data-src="img/0B7A0388.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="0"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery5.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery6.jpg"
+                                        href="img/0B7A0442.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0442.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery6.jpg"
+                                                data-src="img/0B7A0442.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="100"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery6.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery7.jpg"
+                                        href="img/0B7A0468.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0468.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery7.jpg"
+                                                data-src="img/0B7A0468.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="100"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery7.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery8.jpg"
+                                        href="img/0B7A0534.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0534.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery8.jpg"
+                                                data-src="img/0B7A0534.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="200"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery8.jpg"
                                             />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4">
                                     <a
-                                        href="img/galery9.jpg"
+                                        href="img/0B7A0608.jpg"
                                         data-lightbox="image-gallery"
                                     >
-                                        <div class="ratio ratio-4x3">
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0608.jpg');
+                                                "
+                                            ></div>
                                             <img
-                                                src="img/galery9.jpg"
+                                                data-src="img/0B7A0608.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
                                                 loading="lazy"
-                                                data-aos="slide-up"
-                                                data-aos-delay="0"
-                                                class="h-100 w-100 object-fit-cover rounded"
-                                                data-galery="galery9.jpg"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0670.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0670.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0670.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0745.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0745.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0745.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0842.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0842.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0842.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0959.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0959.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0959.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0972.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0972.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0972.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0984.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0984.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0984.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A0996.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A0996.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A0996.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1004.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1004.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1004.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1124.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1124.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1124.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1136.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1136.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1136.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1186.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1186.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1186.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1202.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1202.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1202.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1228.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1228.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1228.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1284.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1284.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1284.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1304.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1304.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1304.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1318.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1318.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1318.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1407.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1407.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1407.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a
+                                        href="img/0B7A1422.jpg"
+                                        data-lightbox="image-gallery"
+                                    >
+                                        <div
+                                            class="ratio overflow-hidden"
+                                            style="--bs-aspect-ratio: 177.78%"
+                                            data-aos="fade-up"
+                                        >
+                                            <div
+                                                class="position-absolute blur-load"
+                                                style="
+                                                    background-image: url('img/thumbnail/0B7A1422.jpg');
+                                                "
+                                            ></div>
+                                            <img
+                                                data-src="img/0B7A1422.jpg"
+                                                class="img-thumb w-100 h-100 object-fit-cover transition"
+                                                style="opacity: 0"
+                                                loading="lazy"
                                             />
                                         </div>
                                     </a>
@@ -846,13 +1553,14 @@
             }
             function loadComment() {
                 $.ajax({
-                    url: "https://schedule.imadebg.com/public/grats/read",
+                    url: "https://message.imadebg.com/public/",
                     dataType: "json",
                     success: function (response) {
+                        console.log(response);
                         if (response.length > 0) {
                             let messages = "";
                             $.each(response, function (idx, val) {
-                                messages += `<div class="mb-2 bg-secondary-subtle px-3 py-2 rounded-3"><div class="fw-semibold">${val.frm}</div><div class="small">${val.msg}</div></div>`;
+                                messages += `<div class="mb-2 bg-secondary-subtle px-3 py-2 rounded-3"><div class="fw-semibold">${val.name}</div><div class="small">${val.msg}</div></div>`;
                             });
                             $("#grats-container").html(messages);
                         }
@@ -893,7 +1601,7 @@
                 // If the count down is finished, write some text
                 if (distance < 0) {
                     clearInterval(x);
-                    $(".counter-container").html("Happily Ever After");
+                    $(".counter-container").html("Thank you");
                 }
             }, 1000);
             // end of counter
@@ -966,7 +1674,7 @@
                     } else {
                         $.ajax({
                             type: "post",
-                            url: "https://schedule.imadebg.com/public/grats",
+                            url: "https://message.imadebg.com/public/home/save",
                             data: {
                                 from: frm,
                                 message: msg,
